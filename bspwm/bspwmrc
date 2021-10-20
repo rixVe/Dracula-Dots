@@ -1,0 +1,53 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V
+
+bspc config border_width         2
+bspc config window_gap           10
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config pointer_follows_focus false
+bspc config focus_follows_pointer true
+
+# Border
+bspc config focused_border_color        "#bd93f9"
+bspc config normal_border_color         "#44475a"
+bspc config active_border_color         "#44475a"
+
+bspc config top_padding 30
+
+#
+# Autostart
+#
+# Bar
+sh ~/.config/polybar/launch.sh &
+# Notifications
+dunst &
+# Wallpaper
+feh --bg-fill /home/piotr/Pictures/wallpaper-master/base.jpg
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# Picom
+picom --experimental-backend &
+# Network Applet
+nm-applet --indicator &
+
+# Cursor
+xsetroot -cursor_name left_ptr &
+
+# Mouse acceleration
+xinput --set-prop 20 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 21 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 12 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1 &
+# Autodim
+xset s 10800 &
+xset s off &
+
+# Noisetorch
+noisetorch &
