@@ -8,10 +8,10 @@ super + Return
 
 # program launcher
 super + d
-    rofi -modi drun -show drun -display-drun "Search" -show-icons -font "Roboto Regular 10" 
+    rofi -modi drun -show drun -display-drun "Search" -show-icons -font "Roboto Regular 12" 
 # power-menu 
 super + shift + e
-     ~/.config/rofi/powermenu.sh
+    sh ~/.config/rofi/powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -106,17 +106,17 @@ XF86MonBrightnessDown
 
 # Screenshot
 Print
-  killall shutter; shutter &
+  flameshot gui
 
 super+Print
   ~/.config/bspwm/scripts/screenshot.sh
 
 # Shortcuts
 super + w 
-  brave 
+  firefox 
 
 super + n 
-  thunar  
+  pcmanfm  
 
 super + F1
   ~/.config/bspwm/scripts/keybindings_rofi.sh
@@ -124,4 +124,4 @@ super + F1
 ctrl + super + Delete
   alacritty -e htop
 super + b
-	discord
+	Discord

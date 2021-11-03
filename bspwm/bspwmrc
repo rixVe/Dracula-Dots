@@ -28,9 +28,8 @@ sh ~/.config/polybar/launch.sh &
 # Notifications
 dunst &
 # Wallpaper
-feh --bg-fill /home/piotr/Pictures/wallpaper-master/base.jpg
+feh --bg-fill /wallpaper.png &
 # Polkit
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Picom
 picom --experimental-backend &
 # Network Applet
@@ -43,11 +42,12 @@ xsetroot -cursor_name left_ptr &
 xinput --set-prop 20 'libinput Accel Profile Enabled' 0, 1 &
 xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1 &
 xinput --set-prop 21 'libinput Accel Profile Enabled' 0, 1 &
-xinput --set-prop 12 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 11 'libinput Accel Profile Enabled' 0, 1 &
 xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1 &
 # Autodim
-xset s 10800 &
-xset s off &
+# xset s 10800 &
+# xset s off &
 
 # Noisetorch
 noisetorch &
+setxkbmap pl &

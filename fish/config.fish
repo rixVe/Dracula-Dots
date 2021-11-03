@@ -3,6 +3,7 @@ if status is-interactive
 end
 set fish_greeting
 alias v="nvim"
-pfetch
+neofetch
 function fish_mode_prompt
 end
+
