@@ -9,9 +9,6 @@ super + Return
 # program launcher
 super + d
     rofi -modi drun -show drun -display-drun "Search" -show-icons -font "Roboto Regular 12" 
-# power-menu 
-super + shift + e
-    sh ~/.config/rofi/powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -93,9 +90,6 @@ XF86AudioLowerVolume
 XF86AudioMute
   amixer -D pulse sset Master toggle-mute
   
-# amixer -q set Master toggle
-# Simple amixer command seems to have problems unmuting device
-
 # Brightness up
 XF86MonBrightnessUp
   xbacklight -inc 5
@@ -107,9 +101,6 @@ XF86MonBrightnessDown
 # Screenshot
 Print
   flameshot gui
-
-super+Print
-  ~/.config/bspwm/scripts/screenshot.sh
 
 # Shortcuts
 super + w 
@@ -125,3 +116,5 @@ ctrl + super + Delete
   alacritty -e htop
 super + b
 	Discord
+super + a 
+	spotify
