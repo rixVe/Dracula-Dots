@@ -45,8 +45,8 @@ xinput --set-prop 21 'libinput Accel Profile Enabled' 0, 1 &
 xinput --set-prop 11 'libinput Accel Profile Enabled' 0, 1 &
 xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1 &
 # Autodim
-# xset s 10800 &
-# xset s off &
+xset s 10800 &
+xset s off &
 
 # Noisetorch
 noisetorch &
