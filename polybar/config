@@ -203,8 +203,9 @@ label-separator = |
 label-separator-foreground = ${colors.fg}
 
 menu-0-0 = "Power off"
-menu-0-0-exec = alacritty -e sudo poweroff
+menu-0-0-exec = poweroff
 menu-0-1 = "Reboot"
-menu-0-1-exec = alacritty -e sudo reboot
+menu-0-1-exec = reboot
 menu-0-2 = "Log out"
-menu-0-2-exec = alacritty -e bspc quit
+menu-0-2-exec = bspc quit
+; vim:ft=dosini

@@ -26,15 +26,15 @@ bspc config top_padding 30
 # Bar
 sh ~/.config/polybar/launch.sh &
 # Notifications
-dunst &
+/home/piotr/.config/dunst/launch.sh &
 # Wallpaper
-feh --bg-fill /wallpaper.png &
+feh --bg-fill --randomize /walls/*.* &
 # Polkit
 # Picom
 picom --experimental-backend &
 # Network Applet
 nm-applet --indicator &
-
+blueberry-tray &
 # Cursor
 xsetroot -cursor_name left_ptr &
 
@@ -48,6 +48,4 @@ xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1 &
 xset s 10800 &
 xset s off &
 
-# Noisetorch
-noisetorch &
 setxkbmap pl &

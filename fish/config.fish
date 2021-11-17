@@ -3,7 +3,7 @@ if status is-interactive
 end
 set fish_greeting
 alias v="nvim"
-neofetch
+pfetch
 function fish_mode_prompt
 end
-
+export TERM=xterm-256color
