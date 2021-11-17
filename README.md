@@ -1,2 +1,2 @@
 # Dracula-Void-Dots
-these are all important .config files that I use in my dracula rice on void linux :)
+these are all important .config files that I use in my dracula rice :)
